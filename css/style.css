@@ -1,0 +1,51 @@
+body {
+    background-color: azure;
+    margin: 0;
+}
+
+#container {
+    /* border: 1px red solid; */
+    background-color: cornflowerblue;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#carcasa {
+    background-color: yellow;
+    border: 1px black solid;
+    width: 300px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgb(53, 118, 239);
+}
+
+.comp {
+    background-color: red;
+    margin: 10px;
+}
+
+#pantalla {
+    height: 250px;
+}
+
+#logo {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#control {
+    height: 100px;
+}
+
+#audio {
+    height: 70px;
+}
+
+#letras {
+    border: 1px solid black;
+    border-radius: 20px;
+}
