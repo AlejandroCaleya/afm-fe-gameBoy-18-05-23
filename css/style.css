@@ -13,12 +13,12 @@ body {
 }
 
 #carcasa {
-    background-color: yellow;
+    background-color: purple;
     border: 1px black solid;
     width: 300px;
     height: 500px;
-    border-radius: 20px 20px 80px 20px; 
-    box-shadow: 5px 5px 10px rgb(53, 118, 239);
+    border-radius: 20px 20px 40px 40px; 
+    box-shadow: 10px 10px 15px rgb(115, 52, 115);
 }
 
 .comp {
@@ -35,6 +35,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Pretendo';
 }
 
 #control {
@@ -44,14 +45,44 @@ body {
 
 #audio {
     height: 70px;
+    display: flex;
+    justify-content: right;
+}
+
+#aud-exit{
+    border: 1px black solid;
+    border-radius: 20px;
+    width: 70px;
+    height: 70px;
+    margin-right: 10px;
+    transform: rotate(-5deg);
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px; */
+    background-image: url(../img/rejilla.jpg);
+    opacity: 10%;
+}
+
+#a-black {
+    background-color: black;
+    grid-
 }
 
 #letras {
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 20px;
     /* transform: rotate(20deg); */
     padding-left: 15px;
     padding-right: 15px;
+    opacity: 25%;
+}
+
+#letras:hover {
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    box-shadow: 2px 4px rgba(217, 217, 188, 0.919);
+    opacity: 50%;
 }
 
 #pantalla-sup {
@@ -84,11 +115,74 @@ body {
     background-color: grey;
     width: 200px;
     margin-top: 20px;
+    box-shadow: 2.5px 2px inset rgba(0, 0, 0, 0.752);
+}
+
+#texto {
+    display: flex;
+    color: gray;
+    font-family: sans-serif;
+    
+}
+
+i {
+    margin-right: 10px;
+    letter-spacing: -1.9px;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
 }
 
 #azul {
-    color: blue;
-    transform: rotate(20deg);
+    color: rgb(182, 26, 52);
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+}
+    #azul:hover {
+        color: rgb(255, 0, 43);
+    }
+
+
+#o {
+    color: rgb(21, 21, 162);
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+}
+#o:hover {
+    color: rgb(0, 0, 255);
+}
+
+#l {
+    color: rgb(14, 128, 69);
+    transform: rotate(-15deg);
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+}
+#l:hover {
+    color: rgb(13, 237, 121);
+}
+
+#o2 {
+    color: rgb(163, 106, 15);
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+}
+#o2:hover {
+    color: rgb(238, 152, 13);
+}
+
+#r {
+    color: rgb(21, 135, 187);
+    font-family: cursive;
+    font-size: large;
+    font-weight: bolder;
+}
+#r:hover {
+    color: rgb(4, 169, 245);
 }
 
 #led {
@@ -98,6 +192,7 @@ body {
     width: 5px;
     height: 5px;
     border-radius: 100%;
+    box-shadow: 4px 4px 6px red;
 }
 
 #cruz, #btn {
@@ -125,6 +220,8 @@ body {
     grid-column: 2 / 3;
     grid-row: 1 / 4;
     border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 2px 2px 4px black;
 }
 
 #cr-horizontal {
@@ -132,6 +229,8 @@ body {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
     border-radius: 5px;
+    /* border: 1px solid black; */
+    box-shadow: 1.5px 0px rgba(0, 0, 0, 0.745);
 }
 
 #btn-ab {
@@ -143,13 +242,17 @@ body {
     justify-content: center;
     align-items: center;
     transform: rotate(-30deg);
-    border: 1px solid rgb(176, 176, 7);
+    /* border: 1px solid rgb(176, 176, 7); */
     border-radius: 20px;
     padding: 1px;
 }
 
 #btn-A, #btn-B {
-    background-color: rgb(129, 15, 15);
+    font-family: monospace;
+    font-size: x-large;
+    font-weight: bolder;
+    border: 1px solid black;
+    background-color:rgb(55, 53, 53);
     width: 40px;
     height: 40px;
     margin: 5px;
@@ -158,14 +261,37 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 2px 2px 0.5px black;
 }
 
 #btn-A:hover, #btn-B:hover {
-    background-color: black;
+    box-shadow: none;
 } 
 
 #ps-med:hover {
-    background-image: url('../img/nintendo-logo-png-transparent.png');
+    background-image: url('../img/fondo-gameboy.gif');
     background-size: cover;
 }
 
+#opt {
+    margin-right: 28px;
+    display: flex;
+    justify-content: center;
+}
+
+#opt-r, #opt-l {
+    background-color: rgb(55, 53, 53);
+    margin-left: 10px;
+    border-radius: 30%;
+    border: 1px black solid;
+    width: 32px;
+    height: 10px;
+    box-shadow: 1.5px 1px 1px rgba(0, 0, 0, 0.919);
+}
+#opt-r:hover, #opt-l:hover {
+    box-shadow: none;
+}
+
+#aud-exit {
+
+}
